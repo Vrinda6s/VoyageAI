@@ -1,0 +1,8 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+# Node modules
+node_modules/
+# Build artifacts
+build/
+dist/
