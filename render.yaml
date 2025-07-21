@@ -1,9 +1,11 @@
 services:
   - type: web
-    name: voyageai-backend
+    name: django-backend
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn voyageai.wsgi:application"
+    startCommand: "gunicorn backend.wsgi:application"
     envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: voyageai.settings
+      - key: DJANGO_SECRET_KEY
+        value: 'django-insecure-4c_bf)y9yep1*!7xta3jwyvq3ty)-(#rhr-ay0i6dmcbt)8sof'
+      - key: DJANGO_ALLOWED_HOSTS
+        value: your-backend-name.onrender.com
